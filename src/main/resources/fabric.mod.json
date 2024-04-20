@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ccb",
+	"version": "${version}",
+	"name": "Cursed Color Block",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ccb/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.hisui.ccb.CursedColorBlock"
+		],
+		"client": [
+			"mod.hisui.ccb.CursedColorBlockClient"
+		],
+		"fabric-datagen": [
+			"mod.hisui.ccb.CursedColorBlockDataGenerator"
+		]
+	},
+	"mixins": [
+		"ccb.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
